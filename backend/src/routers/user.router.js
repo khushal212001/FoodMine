@@ -4,7 +4,7 @@ const router = Router();
 import { BAD_REQUEST } from "../constants/httpStatus.js";
 import auth from '../middleware/auth.mid.js';
 import handler from  'express-async-handler'
-import { UserModel } from "../public/models/user.model.js";
+import { UserModel } from "../models/user.model.js";
 import bcrypt from 'bcryptjs';
 const PASSWORD_HASH_SALT_ROUNDS = 10;
 

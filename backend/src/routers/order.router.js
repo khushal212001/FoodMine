@@ -2,9 +2,9 @@ import { Router } from 'express';
 import handler from 'express-async-handler';
 import auth from '../middleware/auth.mid.js';
 import { BAD_REQUEST, UNAUTHORIZED } from '../constants/httpStatus.js';
-import { OrderModel } from '../public/models/order.model.js';
+import { OrderModel } from '../models/order.model.js';
 import { OrderStatus } from '../constants/orderStatus.js';
-import { UserModel } from '../public/models/user.model.js';
+import { UserModel } from '../models/user.model.js';
 
 const router = Router();
 router.use(auth);
