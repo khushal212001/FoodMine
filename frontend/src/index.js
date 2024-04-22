@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 import CartProvider from './hooks/useCart';
 import './axiosConfig'
 import { AuthProvider } from './hooks/useAuth';
-import { ToastContainer,toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 // import 'react-toastify/dist/index.d.ts'
 import 'react-toastify/dist/ReactToastify.css';
 import { LoadingProvider } from './hooks/useLoading';
@@ -22,7 +22,7 @@ root.render(
             <App />
             <ToastContainer
               position='bottom-right'
-              autoClose={5000}
+              autoClose={4000}
               hideProgressBar={false}
               newestOnTop={false} 
               closeOnClick
